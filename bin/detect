@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-mix_file_url="$1/mix.exs"
+mix_file_url="$1/ingestor/mix.exs"
 
 if [ -f $mix_file_url ];
 then

@@ -6,14 +6,14 @@ erlang_changed=false
 rebar_changed=false
 elixir_changed=false
 
-build_pack_path=$(cd $(dirname $(dirname $0)); pwd)
+build_pack_path=$(cd $(dirname $(dirname $0/ingestor)); pwd)
 
 # Ensure dirs are present
 mkdir -p $1 $2 $3
 
-build_path=$(cd $1 && pwd)
-cache_path=$(cd $2 && pwd)
-env_path=$(cd $3 && pwd)
+build_path=$(cd $1/ingestor && pwd)
+cache_path=$(cd $2/ingestor && pwd)
+env_path=$(cd $3/ingestor && pwd)
 
 
 source ${build_pack_path}/lib/path_funcs.sh
